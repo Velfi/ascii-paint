@@ -1,0 +1,10 @@
+<p class="brush-name" *ngIf="selectedBrush">{{selectedBrush.name}}</p>
+<p class="brush-name" *ngIf="!selectedBrush">Choose a brush:</p>
+<div class="brushes">
+  <app-brush-button
+    *ngFor="let brush of brushes"
+    [brush]="brush"
+    [selected]="isBrushSelected(brush.id)"
+    (onClick)="brushClick($event)"
+  ></app-brush-button>
+</div>

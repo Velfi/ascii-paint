@@ -1,0 +1,8 @@
+.color-name {
+    font-weight: 500;
+    display: block;
+}
+
+.colors {
+    display: flex;
+}

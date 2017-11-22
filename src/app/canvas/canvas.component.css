@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.canvas-rows {
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid black;
+}
+
+.canvas-row {
+    display: flex;
+}

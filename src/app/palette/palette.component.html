@@ -1,0 +1,12 @@
+<p class="color-name" *ngIf="selectedColor">{{selectedColor.name}}</p>
+<p class="color-name" *ngIf="!selectedColor">Choose a color:</p>
+<div class="colors">
+  <app-color-button
+    *ngFor="let color of palette"
+    [id]="color.id"
+    [name]="color.name"
+    [color]="colorService.paletteColorToHex(color)"
+    [selected]="isColorSelected(color.id)"
+    (onClick)="colorClick($event)"
+  ></app-color-button>
+</div>

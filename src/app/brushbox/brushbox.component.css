@@ -1,0 +1,7 @@
+.brush-name {
+    font-weight: 500;
+    display: block;
+}
+.brushes {
+    display: flex;
+}

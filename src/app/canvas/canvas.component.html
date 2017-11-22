@@ -1,0 +1,13 @@
+<div class="canvas-rows">
+  <div
+    *ngFor="let row of pixels"
+    class="canvas-row"
+    >
+    <app-canvas-pixel
+      *ngFor="let pixel of row"
+      [info]="pixel"
+      (onClick)="_pixelClick($event)"
+    >
+    </app-canvas-pixel>
+  </div>
+</div>

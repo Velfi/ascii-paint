@@ -1,0 +1,18 @@
+:host {
+    display: flex;
+    min-height: 1.5rem;
+    min-width: 1.5rem;
+}
+
+.color-button {
+    width: 100%;
+    cursor: pointer;
+}
+
+.color-button:hover {
+    border: 1px solid black;
+}
+
+.color-button.selected {
+    border: 2px solid black;
+}

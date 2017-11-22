@@ -1,0 +1,13 @@
+<app-canvas id="app-canvas"
+  (pixelClick)="pixelClicked($event)"
+></app-canvas>
+<div id="app-sidebar">
+  <app-brushbox
+    id="app-brushbox"
+    (selectBrush)="brushSelected($event)"
+    ></app-brushbox>
+  <app-palette
+    id="app-palette"
+    (selectColor)="colorSelected($event)"
+    ></app-palette>
+</div>
